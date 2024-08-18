@@ -1103,6 +1103,7 @@
     <Content Include="Views\Users\Cart.cshtml" />
     <Content Include="Views\Users\Profile.cshtml" />
     <Content Include="Views\Users\EditProfile.cshtml" />
+    <Content Include="Views\Users\AllProducts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<E_Commerce.Models.Product>
 
 @{
-    ViewBag.Title = "Products";
+    ViewBag.Title = "All Products";
     Layout = "~/Views/Shared/_LayoutMain.cshtml";
 }
 
@@ -93,7 +93,6 @@
         <div class="grid-layout wrapper-shop" data-grid="grid-4">
             @foreach (var product in Model)
             {
-                <!-- card product 1 -->
                 <div class="card-product">
                     <div class="card-product-wrapper">
                         <a href="product-detail.html" class="product-img">
@@ -101,25 +100,17 @@
                             <img class="lazyload img-hover" src="@product.Image_URL" alt="@product.Name">
                         </a>
                         <div class="list-product-btn">
-                            <a href="#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
-                                <span class="icon icon-bag"></span>
-                                <span class="tooltip">Quick Add</span>
-                            </a>
-                            <a href="@Url.Action("ShowDetails", "Users", new { id = product.ID })" class="box-icon bg_white quick-add tf-btn-loading">
-                                <span class="icon icon-edit"></span>
-                                <span class="tooltip">Show Details</span>
-                            </a>
                         </div>
                     </div>
                     <div class="card-product-info">
                         <a href="product-detail.html" class="title link">@product.Name</a>
                         <span class="price">$@product.Price </span>
-                        
                     </div>
                 </div>
-             }
+            }
 
-            </div>
+
+        </div>
         <!-- pagination -->
         <ul class="tf-pagination-wrap tf-pagination-list">
             <li class="active">

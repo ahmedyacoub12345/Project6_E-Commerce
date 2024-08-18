@@ -105,7 +105,7 @@
                             <ul class="box-nav-ul d-flex align-items-center justify-content-center gap-30">
                                 <li class="menu-item">@Html.ActionLink("Home", "Index", "Users", new { area = "" }, new { @class = "item-link" })</li>
                                 <li class="menu-item">@Html.ActionLink("Category", "Category", "Users", new { area = "" }, new { @class = "item-link" })</li>
-                                <li class="menu-item">@Html.ActionLink("Products", "Pruduct", "Users", new { area = "" }, new { @class = "item-link" })</li>
+                                <li class="menu-item">@Html.ActionLink("Products", "AllProducts", "Users", new { area = "" }, new { @class = "item-link" })</li>
                                 <li class="menu-item">@Html.ActionLink("Cart", "Cart", "Users", new { area = "" }, new { @class = "item-link" })</li>
                                 <li class="menu-item">@Html.ActionLink("Buy Now", "BuyNow", "Users", new { area = "" }, new { @class = "item-link" })</li>
                                 @if (Session["islogin"] is bool isLoggedIn && isLoggedIn)

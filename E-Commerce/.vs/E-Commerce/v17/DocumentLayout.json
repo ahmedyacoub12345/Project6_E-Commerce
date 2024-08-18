@@ -1,21 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\E-Commerce Project\\E-Commerce\\",
+  "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|c:\\users\\orange\\desktop\\e-commerce project\\e-commerce\\e-commerce\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|c:\\users\\orange\\desktop\\project6_e-commerce\\e-commerce\\e-commerce\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|c:\\users\\orange\\desktop\\e-commerce project\\e-commerce\\e-commerce\\views\\users\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|c:\\users\\orange\\desktop\\project6_e-commerce\\e-commerce\\e-commerce\\views\\users\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\views\\users\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|c:\\users\\orange\\desktop\\project6_e-commerce\\e-commerce\\e-commerce\\views\\users\\allproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\views\\users\\allproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|c:\\users\\orange\\desktop\\project6_e-commerce\\e-commerce\\e-commerce\\views\\shared\\_layoutmain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\views\\shared\\_layoutmain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\e-commerce\\views\\users\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\views\\users\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|c:\\users\\orange\\desktop\\e-commerce project\\e-commerce\\e-commerce\\views\\users\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\e-commerce\\views\\users\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\views\\users\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|C:\\Users\\Orange\\Desktop\\E-Commerce Project\\E-Commerce\\e-commerce\\views\\users\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\e-commerce\\views\\users\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{10D27889-EAA1-4E90-9517-9DFE63106CD4}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\views\\users\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -26,41 +38,65 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AllProducts.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Views\\Users\\AllProducts.cshtml",
+              "RelativeDocumentMoniker": "E-Commerce\\Views\\Users\\AllProducts.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Views\\Users\\AllProducts.cshtml",
+              "RelativeToolTip": "E-Commerce\\Views\\Users\\AllProducts.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAG0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-18T18:37:15.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Products.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Views\\Users\\Products.cshtml",
+              "RelativeDocumentMoniker": "E-Commerce\\Views\\Users\\Products.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Views\\Users\\Products.cshtml",
+              "RelativeToolTip": "E-Commerce\\Views\\Users\\Products.cshtml",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAUwGwAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-18T18:36:46.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "EditProfile.cshtml",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\E-Commerce Project\\E-Commerce\\E-Commerce\\Views\\Users\\EditProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Views\\Users\\EditProfile.cshtml",
               "RelativeDocumentMoniker": "E-Commerce\\Views\\Users\\EditProfile.cshtml",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\E-Commerce Project\\E-Commerce\\E-Commerce\\Views\\Users\\EditProfile.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Views\\Users\\EditProfile.cshtml",
               "RelativeToolTip": "E-Commerce\\Views\\Users\\EditProfile.cshtml",
               "ViewState": "AQIAABsAAAAAAAAAAAAUwEMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-18T17:28:50.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-18T17:28:50.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Profile.cshtml",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\E-Commerce Project\\E-Commerce\\E-Commerce\\Views\\Users\\Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Views\\Users\\Profile.cshtml",
               "RelativeDocumentMoniker": "E-Commerce\\Views\\Users\\Profile.cshtml",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\E-Commerce Project\\E-Commerce\\E-Commerce\\Views\\Users\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Views\\Users\\Profile.cshtml",
               "RelativeToolTip": "E-Commerce\\Views\\Users\\Profile.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAUwDAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-18T17:21:21.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-18T17:21:21.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\E-Commerce Project\\E-Commerce\\E-Commerce\\Views\\Users\\Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Views\\Users\\Register.cshtml",
               "RelativeDocumentMoniker": "E-Commerce\\Views\\Users\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\E-Commerce Project\\E-Commerce\\E-Commerce\\Views\\Users\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Views\\Users\\Register.cshtml",
               "RelativeToolTip": "E-Commerce\\Views\\Users\\Register.cshtml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAACwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -70,13 +106,26 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\E-Commerce Project\\E-Commerce\\E-Commerce\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "E-Commerce\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\E-Commerce Project\\E-Commerce\\E-Commerce\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Controllers\\UsersController.cs",
               "RelativeToolTip": "E-Commerce\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG0AAAAIAAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAiwGgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-16T17:12:05.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_LayoutMain.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Views\\Shared\\_LayoutMain.cshtml",
+              "RelativeDocumentMoniker": "E-Commerce\\Views\\Shared\\_LayoutMain.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Project6_E-Commerce\\E-Commerce\\E-Commerce\\Views\\Shared\\_LayoutMain.cshtml",
+              "RelativeToolTip": "E-Commerce\\Views\\Shared\\_LayoutMain.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGsAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-18T18:38:10.893Z",
               "EditorCaption": ""
             }
           ]

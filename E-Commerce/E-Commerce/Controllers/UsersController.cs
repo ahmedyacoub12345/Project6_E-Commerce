@@ -87,27 +87,36 @@ namespace E_Commerce.Controllers
             var categories = DB.Categories.ToList();
             return View(categories);
         }
-
         public ActionResult Products(int id)
         {
             var products = DB.Products.Where(p => p.CategoryID == id).ToList();
 
             return View(products);
         }
+        public ActionResult AllProducts(int? id)
+        {
+            if (id.HasValue)
+            {
+                var products = DB.Products.Where(p => p.ID == id.Value).ToList();
+                return View(products);
+            }
+            else
+            {
+                var products = DB.Products.ToList();
+                return View(products);
+            }
+        }
         public ActionResult Logout()
         {
             Session["islogin"] = false;
             return RedirectToAction("Index");
         }
-
         public ActionResult ShowDetails(int id)
         {
             var details = DB.Products.FirstOrDefault(p => p.ID == id);
             return View(details);
-
         }
 
-        
         public ActionResult AddCart(int productId)
         {
             if (Session["islogin"] is bool isLoggedIn && isLoggedIn)
@@ -153,10 +162,8 @@ namespace E_Commerce.Controllers
 
             return RedirectToAction("Index");
         }
-
         private string GetProductImageUrl(int productId)
         {
-            
             var product = DB.Products.FirstOrDefault(p => p.ID == productId);
             return product?.Image_URL; 
         }
