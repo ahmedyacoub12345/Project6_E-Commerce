@@ -1,0 +1,73 @@
+﻿@model E_Commerce.Models.Product
+@{
+    ViewBag.Title = "Product Details";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<!-- Font and CSS links -->
+<link rel="stylesheet" href="~/Style/fonts/fonts.css">
+<link rel="stylesheet" href="~/Style/fonts/font-icons.css">
+<link rel="stylesheet" href="~/Style/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/Style/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="~/Style/css/animate.css">
+<link rel="stylesheet" type="text/css" href="~/Style/css/styles.css" />
+
+<!-- Favicon and Touch Icons -->
+<link rel="shortcut icon" href="~/Style/images/logo/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="~/Style/images/logo/favicon.png">
+
+<!-- JavaScript links -->
+<script type="text/javascript" src="~/Style/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="~/Style/js/jquery.min.js"></script>
+<script type="text/javascript" src="~/Style/js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="~/Style/js/carousel.js"></script>
+<script type="text/javascript" src="~/Style/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="~/Style/js/lazysize.min.js"></script>
+<script type="text/javascript" src="~/Style/js/count-down.js"></script>
+<script type="text/javascript" src="~/Style/js/wow.min.js"></script>
+<script type="text/javascript" src="~/Style/js/multiple-modal.js"></script>
+<script type="text/javascript" src="~/Style/js/main.js"></script>
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="@Url.Content(Model.Image_URL)" alt="@Model.Name">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text"><strong>Description: </strong>@Model.Description</p>
+        <p class="card-text"><strong>Price: </strong>@Model.Price $</p>
+        <p class="card-text"><strong>Category: </strong>@Model.Category.Name</p>
+        <div class="text-right">
+            @Html.ActionLink("Add To Cart", "AddCart", "Users", new { productId = Model.ID }, new { @class = "btn btn-primary mr-2" })
+            @Html.ActionLink("Back", "Index", "Users", new { @class = "btn btn-secondary" })
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        margin: 1rem auto;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .card-img-top {
+        height:18rem; 
+        object-fit: fill;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+        margin-bottom: 1rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        margin: 0.25rem;
+    }
+</style>

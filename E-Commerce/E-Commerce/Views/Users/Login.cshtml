@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<!-- font -->
+<link rel="stylesheet" href="~/Style/fonts/fonts.css">
+<!-- Icons -->
+<link rel="stylesheet" href="~/Style/fonts/font-icons.css">
+<link rel="stylesheet" href="~/Style/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/Style/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="~/Style/css/animate.css">
+<link rel="stylesheet" href="~/Style/css/animate.css">
+<link rel="stylesheet" type="text/css" href="~/Style/css/styles.css" />
+
+<section class="flat-spacing-10">
+    <div class="container">
+        <div class="tf-grid-layout lg-col-2 tf-login-wrap">
+            <div class="tf-login-form">
+                <div id="recover">
+                    <h5 class="mb_24">Reset your password</h5>
+                    <p class="mb_30">We will send you an email to reset your password</p>
+                    <div>
+                        @using (Html.BeginForm("Login", "Users", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            <div class="tf-field style-1 mb_15">
+                                <input class="tf-field-input tf-input" placeholder="" type="email" id="property3" name="Email">
+                                <label class="tf-field-label fw-4 text_black-2" for="property3">Email *</label>
+                            </div>
+                            <div class="mb_20">
+                                <a href="#login" class="tf-btn btn-line">Cancel</a>
+                            </div>
+                            <div class="">
+                                <button type="submit" class="tf-btn w-100 radius-3 btn-fill animate-hover-btn justify-content-center">Reset password</button>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div id="login">
+                    <h5 class="mb_36">Log in</h5>
+                    <div>
+                        @using (Html.BeginForm("Login", "Users", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            <div class="tf-field style-1 mb_15">
+                                <input class="tf-field-input tf-input" placeholder="" type="email" id="property3" name="Email">
+                                <label class="tf-field-label fw-4 text_black-2" for="property3">Email *</label>
+                            </div>
+                            <div class="tf-field style-1 mb_30">
+                                <input class="tf-field-input tf-input" placeholder="" type="password" id="property4" name="Password">
+                                <label class="tf-field-label fw-4 text_black-2" for="property4">Password *</label>
+                            </div>
+                            <div class="mb_20">
+                                <a href="#recover" class="tf-btn btn-line">Forgot your password?</a>
+                            </div>
+                            <div class="">
+                                <button type="submit" class="tf-btn w-100 radius-3 btn-fill animate-hover-btn justify-content-center">Log in</button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="tf-login-content">
+                <h5 class="mb_36">I'm new here</h5>
+                <p class="mb_20">Sign up for early Sale access plus tailored new arrivals, trends and promotions. To opt out, click unsubscribe in our emails.</p>
+                <a href="register.html" class="tf-btn btn-line">Register<i class="icon icon-arrow1-top-left"></i></a>
+            </div>
+        </div>
+    </div>
+</section>

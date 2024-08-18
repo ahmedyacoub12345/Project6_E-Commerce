@@ -1,0 +1,58 @@
+﻿@model E_Commerce.Models.User
+
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<!-- Font and CSS links -->
+<link rel="stylesheet" href="~/Style/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/Style/css/styles.css">
+
+<div class="container mt-5">
+    <h2>User Details</h2>
+
+    <div class="profile-info mt-4">
+        <dl class="row">
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+        </dl>
+    </div>
+
+    <div class="mt-4">
+        <a href="@Url.Action("EditProfile", "Users", new { id = Model.ID })" class="btn btn-primary">Edit</a>
+        <a href="@Url.Action("Index", "Users")" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>
+
+<style>
+    .profile-info dl {
+        background: #f8f9fa;
+        padding: 1rem;
+        border-radius: .25rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }
+
+    .profile-info dt {
+        font-weight: bold;
+    }
+
+    .profile-info dd {
+        margin-bottom: 1rem;
+    }
+
+    .btn-secondary {
+        margin-left: 10px;
+    }
+</style>

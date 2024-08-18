@@ -1,0 +1,67 @@
+﻿@model E_Commerce.Models.User
+
+@{
+    ViewBag.Title = "Edit Profile";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<!-- Font and CSS links -->
+<link rel="stylesheet" href="~/Style/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/Style/css/styles.css">
+
+<div class="container mt-5">
+    <h2>Edit Profile</h2>
+
+    @using (Html.BeginForm("EditProfile", "Users", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label" })
+            @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label" })
+            @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        </div>
+
+        <!-- Handle password securely if included -->
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label" })
+            @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Save Changes" class="btn btn-primary" />
+        </div>
+    }
+</div>
+
+<style>
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + .75rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+    }
+
+    .btn-primary {
+        margin-top: 20px;
+    }
+</style>

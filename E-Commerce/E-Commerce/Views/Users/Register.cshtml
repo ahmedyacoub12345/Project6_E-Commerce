@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<!-- font -->
+<link rel="stylesheet" href="~/Style/fonts/fonts.css">
+<!-- Icons -->
+<link rel="stylesheet" href="~/Style/fonts/font-icons.css">
+<link rel="stylesheet" href="~/Style/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/Style/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="~/Style/css/animate.css">
+<link rel="stylesheet" href="~/Style/css/animate.css">
+<link rel="stylesheet" type="text/css" href="~/Style/css/styles.css" />
+
+<section class="flat-spacing-10">
+    <div class="container">
+        <div class="form-register-wrap">
+            <div class="flat-title align-items-start gap-0 mb_30 px-0">
+                <h5 class="mb_18">Register</h5>
+                <p class="text_black-2">Sign up for early Sale access plus tailored new arrivals, trends and promotions. To opt out, click unsubscribe in our emails</p>
+            </div>
+            <div>
+                @using (Html.BeginForm("Register", "Users", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="tf-field style-1 mb_15">
+                        <input class="tf-field-input tf-input" placeholder=" " type="text" id="property2" name="Name">
+                        <label class="tf-field-label fw-4 text_black-2" for="property2">Last name</label>
+                    </div>
+                    <div class="tf-field style-1 mb_15">
+                        <input class="tf-field-input tf-input" placeholder=" " type="email" id="property3" name="Email">
+                        <label class="tf-field-label fw-4 text_black-2" for="property3">Email *</label>
+                    </div>
+                    <div class="tf-field style-1 mb_30">
+                        <input class="tf-field-input tf-input" placeholder=" " type="password" id="property4" name="Password">
+                        <label class="tf-field-label fw-4 text_black-2" for="property4">Password *</label>
+                    </div>
+                    <div class="mb_20">
+                        <button type="submit" class="tf-btn w-100 radius-3 btn-fill animate-hover-btn justify-content-center">Register</button>
+                    </div>
+                    <div class="text-center">
+                        <a href="login.html" class="tf-btn btn-line">Already have an account? Log in here<i class="icon icon-arrow1-top-left"></i></a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

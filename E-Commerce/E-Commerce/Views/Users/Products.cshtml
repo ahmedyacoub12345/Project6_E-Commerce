@@ -1,0 +1,147 @@
+﻿@model IEnumerable<E_Commerce.Models.Product>
+
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<!-- font -->
+<link rel="stylesheet" href="~/Style/fonts/fonts.css">
+<link rel="stylesheet" href="~/Style/fonts/font-icons.css">
+<link rel="stylesheet" href="~/Style/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/Style/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="~/Style/css/animate.css">
+<link rel="stylesheet" type="text/css" href="~/Style/css/styles.css" />
+
+<!-- Favicon and Touch Icons  -->
+<link rel="shortcut icon" href="~/Style/images/logo/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="~/Style/images/logo/favicon.png">
+
+<!-- Javascript -->
+<script type="text/javascript" src="~/Style/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="~/Style/js/jquery.min.js"></script>
+<script type="text/javascript" src="~/Style/js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="~/Style/js/carousel.js"></script>
+<script type="text/javascript" src="~/Style/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="~/Style/js/lazysize.min.js"></script>
+<script type="text/javascript" src="~/Style/js/count-down.js"></script>
+<script type="text/javascript" src="~/Style/js/wow.min.js"></script>
+<script type="text/javascript" src="~/Style/js/multiple-modal.js"></script>
+<script type="text/javascript" src="~/Style/js/main.js"></script>
+
+<!--Products-->
+
+<section class="flat-spacing-2">
+    <div class="container">
+        <div class="tf-shop-control grid-3 align-items-center">
+            <div class="tf-control-filter">
+                <a href="#filterShop" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="tf-btn-filter"><span class="icon icon-filter"></span><span class="text">Filter</span></a>
+            </div>
+            <ul class="tf-control-layout d-flex justify-content-center">
+                <li class="tf-view-layout-switch sw-layout-2" data-value-grid="grid-2">
+                    <div class="item"><span class="icon icon-grid-2"></span></div>
+                </li>
+                <li class="tf-view-layout-switch sw-layout-3" data-value-grid="grid-3">
+                    <div class="item"><span class="icon icon-grid-3"></span></div>
+                </li>
+                <li class="tf-view-layout-switch sw-layout-4 active" data-value-grid="grid-4">
+                    <div class="item"><span class="icon icon-grid-4"></span></div>
+                </li>
+                <li class="tf-view-layout-switch sw-layout-5" data-value-grid="grid-5">
+                    <div class="item"><span class="icon icon-grid-5"></span></div>
+                </li>
+                <li class="tf-view-layout-switch sw-layout-6" data-value-grid="grid-6">
+                    <div class="item"><span class="icon icon-grid-6"></span></div>
+                </li>
+            </ul>
+            <div class="tf-control-sorting d-flex justify-content-end">
+                <div class="tf-dropdown-sort" data-bs-toggle="dropdown">
+                    <div class="btn-select">
+                        <span class="text-sort-value">Featured</span>
+                        <span class="icon icon-arrow-down"></span>
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="select-item active">
+                            <span class="text-value-item">Featured</span>
+                        </div>
+                        <div class="select-item">
+                            <span class="text-value-item">Best selling</span>
+                        </div>
+                        <div class="select-item">
+                            <span class="text-value-item">Alphabetically, A-Z</span>
+                        </div>
+                        <div class="select-item">
+                            <span class="text-value-item">Alphabetically, Z-A</span>
+                        </div>
+                        <div class="select-item">
+                            <span class="text-value-item">Price, low to high</span>
+                        </div>
+                        <div class="select-item">
+                            <span class="text-value-item">Price, high to low</span>
+                        </div>
+                        <div class="select-item">
+                            <span class="text-value-item">Date, old to new</span>
+                        </div>
+                        <div class="select-item">
+                            <span class="text-value-item">Date, new to old</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="grid-layout wrapper-shop" data-grid="grid-4">
+            @foreach (var product in Model)
+            {
+                <!-- card product 1 -->
+                <div class="card-product">
+                    <div class="card-product-wrapper">
+                        <a href="product-detail.html" class="product-img">
+                            <img class="lazyload img-product" src="@product.Image_URL" alt="@product.Name">
+                            <img class="lazyload img-hover" src="@product.Image_URL" alt="@product.Name">
+                        </a>
+                        <div class="list-product-btn">
+                            <a href="#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                <span class="icon icon-bag"></span>
+                                <span class="tooltip">Quick Add</span>
+                            </a>
+                            <a href="@Url.Action("ShowDetails", "Users", new { id = product.ID })">show details</a>
+
+                            <a href="@Url.Action("ShowDetails", "Users", new { id = product.ID })" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                <span class="icon icon-alert"></span>
+                                <span class="tooltip">Show Details</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-product-info">
+                        <a href="product-detail.html" class="title link">@product.Name</a>
+                        <span class="price">$@product.Price </span>
+                        
+                    </div>
+                </div>
+             }
+
+            </div>
+        <!-- pagination -->
+        <ul class="tf-pagination-wrap tf-pagination-list">
+            <li class="active">
+                <a href="#" class="pagination-link">1</a>
+            </li>
+            <li>
+                <a href="#" class="pagination-link animate-hover-btn">2</a>
+            </li>
+            <li>
+                <a href="#" class="pagination-link animate-hover-btn">3</a>
+            </li>
+            <li>
+                <a href="#" class="pagination-link animate-hover-btn">4</a>
+            </li>
+            <li>
+                <a href="#" class="pagination-link animate-hover-btn">
+                    <span class="icon icon-arrow-right"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- /Section Product -->
